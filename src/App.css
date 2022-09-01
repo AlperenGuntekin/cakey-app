@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbar-toggler {
+  background-color: white;
+}
+
+.navbar-inner {
+  background:transparent;
+}
+
+body {
+  background-image: url("/src/assets/background.jpg");
+}
