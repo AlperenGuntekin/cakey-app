@@ -1,5 +1,6 @@
 import "./App.css";
 import Login from "./components/pages/Login";
+import { Link } from "react-router-dom";
 import Appointment from "./components/pages/Appointment";
 import Resume from "./components/pages/Resume";
 import Home from "./components/pages/Home";
@@ -8,6 +9,7 @@ import Register from "./components/pages/Register";
 import Profile from "./components/pages/Profile";
 import Linkedin from "./components/pages/Linkedin";
 import User from "./components/AdminPanel/User";
+import Settings from "./components/pages/Settings";
 
 function App() {
 
@@ -22,19 +24,18 @@ function App() {
             </a>
             <div className="text-right" id="navbarNavAltMarkup">
               <div className="navbar-nav">
-                <a
-                  className="nav-link active text-white"
-                  aria-current="page"
-                  href="#cakey"
-                >
-                  Cakey
-                </a>
-                <a className="nav-link text-white" href="#problem">
-                  Randevu Al
-                </a>
-                <a className="nav-link text-white" href="#problem">
-                  Özgeçmiş İncelet
-                </a>
+                <Link 
+                className="nav-link text-white"
+                to="/home">Cakey</Link>
+                <Link 
+                className="nav-link text-white"
+                to="/appointment">Randevu Al</Link>
+                <Link 
+                className="nav-link text-white"
+                to="/resume">Özgeçmiş İncelet</Link>
+                <Link 
+                className="nav-link text-white"
+                to="/settings">Ayarlar</Link>
               </div>
             </div>
           </div>
@@ -48,6 +49,7 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/linkedin" element={<Linkedin />} />
         <Route path="/admin" element={<User />} />
+        <Route path="/settings" element={<Settings />} />
         </Routes>
       </div>
     </div>
