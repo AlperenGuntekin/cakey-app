@@ -36,9 +36,6 @@ function App() {
                 <Link 
                 className="nav-link text-white"
                 to="/settings">Ayarlar</Link>
-                <Link 
-                className="nav-link text-white"
-                to="/settings">Ayarlar</Link>
               </div>
             </div>
           </div>
