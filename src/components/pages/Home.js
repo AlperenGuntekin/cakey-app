@@ -18,32 +18,32 @@ class App extends Component {
         <Card 
         className="Card m-5 text-center"
         style={{ width: "16rem" }}>
-          <Card.Img variant="top" src="resume.svg" />
+          <Card.Img className="card-image" variant="top" src="resume.svg" />
           <Card.Body>
-            <Card.Title>Özgeçmiş İnceleme</Card.Title>
+            <Card.Title className="text-white">Özgeçmiş İnceleme</Card.Title>
             <a className="nav-link text-white" href="#ozgecmis">Göz At</a>
           </Card.Body>
         </Card>
         <Card 
         className="Card m-5 text-center"
         style={{ width: "16rem" }}>
-          <Card.Img variant="top" src="interview.svg" />
+          <Card.Img className="card-image" variant="top" src="interview.svg" />
           <Card.Body>
-            <Card.Title>Mülakat Simülasyonu</Card.Title>
+            <Card.Title className="text-white">Mülakat Simülasyonu</Card.Title>
             <a className="nav-link text-white" href="#mulakat">Göz At</a>
           </Card.Body>
         </Card>
         <Card 
         className="Card m-5 text-center"
         style={{ width: "16rem" }}>
-          <Card.Img variant="top" src="linkedin.svg" />
+          <Card.Img className="card-image" variant="top" src="linkedin.svg" />
           <Card.Body>
-            <Card.Title>Linkedin İnceleme</Card.Title>
+            <Card.Title className="text-white">Linkedin İnceleme</Card.Title>
             <a className="nav-link text-white" href="#linkedin">Göz At</a>
           </Card.Body>
         </Card>
         </CardGroup>
-
+        
         <h1 
         id="ozgecmis"
         className="home-title text-center mt-2 text-white">Özgeçmiş İnceleme</h1>
@@ -51,7 +51,7 @@ class App extends Component {
         <Card
         className="m-5 text-center"
         style={{ width: "16rem" }}>
-          <Card.Img variant="top" src={Data.Data1.profile} />
+          <Card.Img className="card-image" variant="top" src={Data.Data1.profile} />
           <Card.Body>
             <Card.Title>{Data.Data1.username}</Card.Title>
             <Card.Text>
